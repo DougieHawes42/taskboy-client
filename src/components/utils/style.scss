@@ -1,0 +1,26 @@
+@import "../../display/style/variables.scss";
+
+.link {
+  font-size: $space_unit * 4;
+  margin-left: $space-unit;
+  color: $colour04;
+}
+
+.route {
+  max-height: $route-height;
+  min-height: $route-height;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: $y-padding-desktop $x-padding-desktop;
+  .route-title {
+    color: $colour03;
+    font-size: $space_unit * 5;
+    position: absolute;
+    left: $x-padding-desktop;
+    top: $header-height;
+  }
+  .route-content {
+    min-height: 200vh;
+    padding-top: $space-unit * 5;
+  }
+}
